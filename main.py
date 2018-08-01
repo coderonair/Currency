@@ -47,7 +47,7 @@ def getUSD():
     fromadd="afpsoft@gmail.com"
     toadd="afpsoft@gmail.com"
     server.sendmail(fromadd, toadd, msg)
-    print  " SENT "
+    print  " MAIL HASS BEEN SENT "
     time.sleep(1800)
 
 
