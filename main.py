@@ -4,6 +4,8 @@ from bs4 import BeautifulSoup
 import csv
 import time
 from datetime import datetime
+from notify_run import Notify
+
 
 import smtplib
 from os.path import basename
@@ -49,8 +51,11 @@ def getUSD():
     toadd="afpsoft@gmail.com"
     server.sendmail(fromadd, toadd, msg)
     print  " MAIL HAS BEEN SENT "
-    time.sleep(1800)
 
+    notify = Notify()
+    notify.send(msg)
+
+    time.sleep(1800)
 
 
 while True:
