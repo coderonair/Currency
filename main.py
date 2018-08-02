@@ -5,6 +5,7 @@ import csv
 import time
 from datetime import datetime
 from notify_run import Notify
+import os
 
 
 import smtplib
@@ -46,16 +47,32 @@ def getUSD():
     server.login("afpsoft", "anahtaranahtar")
 
     #Send the mail
-    msg = "USD" + str(value)
+    msg = "USD  " + str(value)
     fromadd="afpsoft@gmail.com"
     toadd="afpsoft@gmail.com"
     server.sendmail(fromadd, toadd, msg)
+    print msg
     print  " MAIL HAS BEEN SENT "
 
-    notify = Notify()
-    notify.send(msg)
+    # notify = Notify()
+    # notify.send(msg)
 
-    time.sleep(1800)
+    msg1 = "5-1 alti USD:  " + str(value)
+    msg2 = "5-1 ustu USD:  " + str(value)
+    command1 ="curl https://notify.run/pwIkd1EewIG3SpTy -d " + "\"" + msg1 + "\""
+    command2 ="curl https://notify.run/pwIkd1EewIG3SpTy -d " + "\"" + msg2 + "\""
+    # print command1
+    # print command2
+    # print value
+    # if float(value)<5.1000:
+    #     print "case1"
+    #     os.system(command1)
+
+    if float(value)>=5.1000:
+        print "case2"
+        os.system(command2)
+
+    time.sleep(600)
 
 
 while True:
