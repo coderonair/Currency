@@ -28,6 +28,7 @@ def getUSD():
     name_box = soup.find_all("span", attrs={"class": "menu-row2"})
 
     value = name_box[1].text.strip() # strip() is used to remove starting and trailing
+    value =value.replace(',', '.')
     print  datetime.now()
     print  "  USD: " + value
 
@@ -47,7 +48,7 @@ def getUSD():
     fromadd="afpsoft@gmail.com"
     toadd="afpsoft@gmail.com"
     server.sendmail(fromadd, toadd, msg)
-    print  " MAIL HASS BEEN SENT "
+    print  " MAIL HAS BEEN SENT "
     time.sleep(1800)
 
 
