@@ -72,7 +72,7 @@ def getUSD():
         print "case2"
         os.system(command2)
 
-    time.sleep(605)
+    time.sleep(606)
 
 
 while True:
