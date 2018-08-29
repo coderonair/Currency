@@ -25,9 +25,9 @@ def getUSD():
     quote_page = "http://randevu.bezmialemhastanesi.com/randevu/get_app_time.php?dr_id=3083&dept_id=1215&day=04.09.2018"
     quote_page2 = "http://randevu.bezmialemhastanesi.com/randevu/get_app_time.php?dr_id=3083&dept_id=1215&day=03.09.2018"
     quote_page3 = "http://randevu.bezmialemhastanesi.com/randevu/get_app_time.php?dr_id=3060&dept_id=610&day=04.09.2018"
-    quote_page4 = "http://randevu.bezmialemhastanesi.com/randevu/get_app_time.php?dr_id=2516&dept_id=1287&day=03.09.2018"
+    quote_pagetest = "http://randevu.bezmialemhastanesi.com/randevu/get_app_time.php?dr_id=2516&dept_id=1287&day=03.09.2018"
 
-    j = urllib2.urlopen(quote_page)
+    j = urllib2.urlopen(quote_page3)
     j_obj = json.load(j)
 
     print j_obj
@@ -58,9 +58,9 @@ def getUSD():
     # notify = Notify()
     # notify.send(msg)
 
-    msg1 = "RANDEVU 1 KAPALI:  " + day1.encode('utf-8')
-    msg2 = "RANDEVU 1 DOLU:  " + day1.encode('utf-8')
-    msg3= "!!!RANDEVU 1 AÇILDI !!!:  " + day1.encode('utf-8')
+    msg1 = "RANDEVU 2 KAPALI:  " + day1.encode('utf-8')
+    msg2 = "RANDEVU 2 DOLU:  " + day1.encode('utf-8')
+    msg3= "!!!RANDEVU 2 AÇILDI !!!:  " + day1.encode('utf-8')
     command1 ="curl https://notify.run/pwIkd1EewIG3SpTy -d " + "\"" + msg1 + "\""
     command2 ="curl https://notify.run/pwIkd1EewIG3SpTy -d " + "\"" + msg2 + "\""
     command3 = "curl https://notify.run/pwIkd1EewIG3SpTy -d " + "\"" + msg3 + "\""
@@ -81,13 +81,13 @@ def getUSD():
         msg=msg3
         print "AÇILDI"
         os.system(command3)
-        server.sendmail(fromadd, toadd1, "RANDEVU 1 AÇILDI")
+        server.sendmail(fromadd, toadd1, "RANDEVU 2 AÇILDI")
         print msg
-        print  " -AÇILDI- 1 MAIL HAS BEEN SENT "
+        print  " -AÇILDI- 2 MAIL HAS BEEN SENT "
 
-    server.sendmail(fromadd, toadd2, "CODE 1 WORKING")
+    server.sendmail(fromadd, toadd2, "CODE 2 WORKING")
     print msg
-    print  "REGULAR MAIL 1 HAS BEEN SENT "
+    print  "REGULAR MAIL 2 HAS BEEN SENT "
 
 
     time.sleep(60)
