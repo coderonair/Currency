@@ -41,11 +41,11 @@ def getUSD():
 
 
 
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.ehlo()
-    server.starttls()
+    #server = smtplib.SMTP('smtp.gmail.com', 587)
+    #server.ehlo()
+    #server.starttls()
     # Next, log in to the server
-    server.login("afpsoft", "anahtaranahtar")
+    #server.login("afpsoft", "anahtaranahtar")
 
     # Send the mail
     fromadd = "afpsoft@gmail.com"
@@ -81,11 +81,11 @@ def getUSD():
         msg=msg3
         print "AÇILDI"
         os.system(command3)
-        server.sendmail(fromadd, toadd1, "RANDEVU 2 AÇILDI")
+        #server.sendmail(fromadd, toadd1, "RANDEVU 2 AÇILDI")
         print msg
         print  " -AÇILDI- 2 MAIL HAS BEEN SENT "
 
-    server.sendmail(fromadd, toadd2, "CODE 2 WORKING")
+    #server.sendmail(fromadd, toadd2, "CODE 2 WORKING")
     print msg
     print  "REGULAR MAIL 2 HAS BEEN SENT "
 

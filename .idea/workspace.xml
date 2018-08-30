@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bca0dc36-ffeb-4993-a676-b6aa29931c2b" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/randevu2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randevu.py" beforeDir="false" afterPath="$PROJECT_DIR$/randevu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randevu2.py" beforeDir="false" afterPath="$PROJECT_DIR$/randevu2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -108,20 +109,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randevu.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="randevu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/randevu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="731">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+              <folding>
+                <element signature="e#19#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randevu2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="randevu2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/randevu2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="216">
+              <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
               <folding>
                 <element signature="e#44#58#0" expanded="true" />
               </folding>
@@ -429,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535583849703</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Default Changelist">
+      <created>1535584388028</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1535584388028</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -655,20 +666,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/randevu2.py">
+    <entry file="file://$PROJECT_DIR$/randevu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="731">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
-            <element signature="e#44#58#0" expanded="true" />
+            <element signature="e#19#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/randevu.py">
+    <entry file="file://$PROJECT_DIR$/randevu2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="216">
+          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding>
+            <element signature="e#44#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
